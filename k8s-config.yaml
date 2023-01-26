@@ -14,9 +14,11 @@ spec:
       labels:
         app: nodeapp
     spec:
+      imagePullSecrets:
+      - name: docker-login
       containers:
       - name: nodeapp
-        image: nirdeshkumar02/nodejs-monitor-app:nodeapp
+        image: nirdeshkumar02/my-app:node-monitor-app
         ports:
         - containerPort: 3000
         imagePullPolicy: Always  
