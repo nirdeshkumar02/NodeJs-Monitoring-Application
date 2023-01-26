@@ -14,11 +14,9 @@ spec:
       labels:
         app: nodeapp
     spec:
-      imagePullSecrets:
-      - name: my-registry-key
       containers:
       - name: nodeapp
-        image: nanajanashia/demo-app:nodeapp
+        image: nirdeshkumar02/nodejs-monitor-app:nodeapp
         ports:
         - containerPort: 3000
         imagePullPolicy: Always  
